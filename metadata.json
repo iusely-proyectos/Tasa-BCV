@@ -1,0 +1,6 @@
+{
+  "name": "Portal de Tasas BCV",
+  "description": "Monitoreo en tiempo real de las tasas oficiales del Banco Central de Venezuela (BCV) con un historial de tasas anteriores y capacidad de simulación.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

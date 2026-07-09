@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter" error in sandboxed iframes
+      (function() {
+        try {
+          let customFetch = window.fetch || (typeof globalThis !== 'undefined' ? globalThis.fetch : null);
+          if (customFetch) {
+            const descriptor = {
+              get() {
+                return customFetch;
+              },
+              set(val) {
+                customFetch = val;
+              },
+              configurable: true,
+              enumerable: true
+            };
+
+            const targets = [];
+            if (typeof window !== 'undefined') targets.push(window);
+            if (typeof globalThis !== 'undefined') targets.push(globalThis);
+            if (typeof self !== 'undefined') targets.push(self);
+            if (typeof Window !== 'undefined' && Window.prototype) targets.push(Window.prototype);
+
+            for (const target of targets) {
+              try {
+                Object.defineProperty(target, 'fetch', descriptor);
+              } catch (err) {
+                console.warn('Failed to patch fetch on target:', err);
+              }
+            }
+          }
+        } catch (e) {
+          console.warn('Failed to set up fetch proxy:', e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,46 @@
+{
+  "current": {
+    "usd": 674.93,
+    "eur": 770.68,
+    "cny": 94.95,
+    "try": 13.75,
+    "rub": 8.33,
+    "rawUsd": 674.9305,
+    "rawEur": 770.68289003,
+    "rawCny": 94.94707916280755,
+    "rawTry": 13.753854017354518,
+    "rawRub": 8.327923903554515,
+    "dateText": "Fecha Valor: Lunes, 06 de julio de 2026",
+    "updatedAt": "2026-07-06T20:15:09.940Z"
+  },
+  "history": [
+    {
+      "id": "hist_1783368675187",
+      "usd": 667.05,
+      "eur": 763.19,
+      "dateText": "Fecha Valor: Lunes, 06 de julio de 2026",
+      "updatedAt": "2026-07-05T14:10:05.681Z"
+    },
+    {
+      "id": "hist_1783260605681",
+      "usd": 659.05,
+      "eur": 736.44,
+      "dateText": "Fecha Valor: Domingo, 5 de julio de 2026 (Simulado)",
+      "updatedAt": "2026-07-05T14:09:58.820Z"
+    },
+    {
+      "id": "hist_1783260598819",
+      "usd": 647.77,
+      "eur": 741.14,
+      "dateText": "Fecha Valor: Domingo, 5 de julio de 2026 (Simulado)",
+      "updatedAt": "2026-07-05T14:09:57.921Z"
+    },
+    {
+      "id": "hist_1783260597921",
+      "usd": 663,
+      "eur": 758.56,
+      "dateText": "Fecha Valor: Domingo, 5 de julio de 2026 (Simulado)",
+      "updatedAt": "2026-07-05T14:09:57.000Z"
+    }
+  ]
+}
